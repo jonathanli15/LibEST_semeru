@@ -1,4 +1,5 @@
 static void (*est_log_func)(char *, va_list) = NULL;
+
 /*
  * This is our default logger routine, which just
  * dumps log data to stderr.  The application can
@@ -6,6 +7,7 @@ static void (*est_log_func)(char *, va_list) = NULL;
  * passing in a function pointer to a function
  * that implements this prototype.
  */
+
 static void est_logger_stderr (char *format, va_list l)
 {
 #ifndef WIN32
